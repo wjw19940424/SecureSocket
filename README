@@ -1,0 +1,9 @@
+step1: Execute the Initialization.sh to produce CA root certification(./openssl/demoCA/cacert.pem), the private key of server(./openssl/server.key) and server certification signed by CA(./openssl/server.crt). 
+
+step2: Execute make
+
+step3: Run the secuserver with server's certification and server's private key. 
+(secuserver ./openssl/server.crt ./openssl/server.key)
+
+step4: Run the secuclient with CA root certification. 
+(secuclient ./openssl/demoCA/cacert.pem)
