@@ -12,7 +12,7 @@ if [ -f "$CAshpath" ]; then
 else
     echo ${CAshpath}"not exists"
 fi
-#生成CA管理目录及根私钥和根目录
+#生成CA管理目录及根私钥和根证书
 cd ./openssl
 ./CA.sh -newca
 #生成服务器私钥
